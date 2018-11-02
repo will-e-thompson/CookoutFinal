@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Cookout" x:Class="Cookout.RecipeViewer"   >
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="recipeName" HeightRequest="30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Style="Underlined" Text="{Binding Recipe.RecipeName}" HorizontalOptions="Center" VerticalOptions="Center" Font="Bold,20"/>
+                <Image HeightRequest="125" BackgroundColor="Silver">
+                </Image>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Description" FontSize="10"  Command="{Binding DescriptionClicked}" Grid.Row="0" Grid.Column="0" BorderWidth="0" CornerRadius="15" />
+                    <Button Text="Instructions" FontSize="10" Command="{Binding InstructionClicked}" Grid.Row="0" Grid.Column="1" BorderWidth="0" CornerRadius="15"/>
+                    <Button Text="Ingredients"  FontSize="10" Command="{Binding IngredientsClicked}" Grid.Row="0" Grid.Column="2" BorderWidth="0" CornerRadius="15"/>
+                </Grid>
+                <Label x:Name="recipeContentlbl" Text="{Binding RecipeContent}" MinimumHeightRequest="150" HeightRequest="120" VerticalOptions="CenterAndExpand" Margin="5,5,5,5">
+                    
+                </Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

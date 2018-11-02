@@ -1,0 +1,11 @@
+C:\Users\will-\Desktop\IAB330 Projects\Cookout_Xamarin_Forms\Cookout\bin\Release\netstandard2.0\Cookout.deps.json
+C:\Users\will-\Desktop\IAB330 Projects\Cookout_Xamarin_Forms\Cookout\bin\Release\netstandard2.0\Cookout.dll
+C:\Users\will-\Desktop\IAB330 Projects\Cookout_Xamarin_Forms\Cookout\bin\Release\netstandard2.0\Cookout.pdb
+C:\Users\will-\Desktop\IAB330 Projects\Cookout_Xamarin_Forms\Cookout\obj\Release\netstandard2.0\Cookout.csprojAssemblyReference.cache
+C:\Users\will-\Desktop\IAB330 Projects\Cookout_Xamarin_Forms\Cookout\obj\Release\netstandard2.0\TodoList.xaml.g.cs
+C:\Users\will-\Desktop\IAB330 Projects\Cookout_Xamarin_Forms\Cookout\obj\Release\netstandard2.0\Cookout.csproj.CoreCompileInputs.cache
+C:\Users\will-\Desktop\IAB330 Projects\Cookout_Xamarin_Forms\Cookout\obj\Release\netstandard2.0\Cookout.AssemblyInfoInputs.cache
+C:\Users\will-\Desktop\IAB330 Projects\Cookout_Xamarin_Forms\Cookout\obj\Release\netstandard2.0\Cookout.AssemblyInfo.cs
+C:\Users\will-\Desktop\IAB330 Projects\Cookout_Xamarin_Forms\Cookout\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\will-\Desktop\IAB330 Projects\Cookout_Xamarin_Forms\Cookout\obj\Release\netstandard2.0\Cookout.dll
+C:\Users\will-\Desktop\IAB330 Projects\Cookout_Xamarin_Forms\Cookout\obj\Release\netstandard2.0\Cookout.pdb

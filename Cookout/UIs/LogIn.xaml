@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:local="clr-namespace:tryyyy"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Cookout.LogIn">                                    
+    <ContentPage.Content>
+        
+         <ScrollView>
+    <StackLayout Padding="25,25">
+
+        <!-- Place new controls here -->
+         <Label TextColor="Black" 
+                HorizontalOptions="Center"
+                   FontSize = "30" Text="Sign In" />
+                           <StackLayout Padding="0,25"></StackLayout>
+
+                <Label TextColor="Black" FontSize = "20" Text="Email" />
+            
+                        <Entry Text="{Binding Email}" Placeholder="Enter your email" />
+                        
+                <Label TextColor="Black" FontSize = "20" Text="Password" />
+            
+                        <Entry Text="{Binding Password}" IsPassword="true" Placeholder="Enter your password" />
+        
+        
+                            <Button Text="Log in" Command="{Binding login_Clicked}" />
+
+        
+        
+        <Button Text="Registration" Command="{Binding register_clicked}" />
+        
+    </StackLayout>
+        </ScrollView>
+
+        
+    </ContentPage.Content>
+</ContentPage>

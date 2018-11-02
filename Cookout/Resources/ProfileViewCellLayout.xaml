@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cookout.Resources.ProfileViewCellLayout"
+             xmlns:local="clr-namespace:Cookout.View_Models">
+    <StackLayout>
+        <StackLayout.BindingContext>
+            <local:ProfileViewModel/>
+        </StackLayout.BindingContext>
+        
+        <StackLayout Orientation="Horizontal"
+                   BackgroundColor="SlateGray"
+                   HorizontalOptions="FillAndExpand">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="Me.PNG"
+                        HeightRequest="40"
+                        VerticalOptions="Start"/>
+                    <Label Text="{Binding UserName}"
+                        FontSize="Micro"
+                        VerticalOptions="Start"/>
+                </StackLayout>
+                <Button Text="{Binding recipe.RecipeName}"
+                    Command="{Binding RecipeClicked}"
+                    FontSize="Micro"
+                    VerticalOptions="Center"/>
+            </StackLayout>
+            <Image Source="ButterChicken.jpg"
+                 HeightRequest="100"
+                 HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentView>

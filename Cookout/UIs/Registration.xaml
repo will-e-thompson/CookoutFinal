@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:local="clr-namespace:tryyyy"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Cookout.Registration">
+ <ScrollView>
+        <StackLayout Padding="25,25">
+            
+ <Label TextColor="Black" 
+                HorizontalOptions="CenterAndExpand"
+                   FontSize = "25" Text="Registration page" />
+                   
+                    <StackLayout Padding="0,15">
+                    </StackLayout>
+                <Label TextColor="Black" FontSize = "17" Text="First name" />
+            
+                        <Entry Text="{Binding First}" Placeholder="Enter your first name" />
+            
+            
+            
+                    
+            
+            
+            
+                            <Label TextColor="Black" FontSize = "17" Text="Last name" />
+            
+                        <Entry Text="{Binding Last}" Placeholder="Enter your last name" />
+            
+            
+            
+            
+                        
+               
+
+            
+            
+            
+            
+                       <Label TextColor="Black" FontSize = "17" Text="Mobile Number" />
+            
+                        <Entry Text="{Binding Mobile}" Placeholder="Enter your mobile number" />
+                       
+            
+            
+            
+                        
+              
+
+            
+                <Label TextColor="Black" FontSize = "17" Text="E-mail" />
+            
+                        <Entry Text="{Binding Email}" Placeholder="Enter your email" />
+                       
+            
+            
+            
+                        
+           
+
+            
+            
+                               <Label TextColor="Black" FontSize = "17" Text="Password" />
+            
+                        <Entry Text="{Binding Password}" IsPassword="true" Placeholder="Enter your password" />
+            
+            
+                        
+       
+
+            
+            
+                               <Label TextColor="Black" FontSize = "17" Text="Confirm Password" />
+            
+                        <Entry Text="{Binding Confirm_password}" IsPassword="true" Placeholder="Confirm your password" />            
+            
+                        
+ 
+
+            
+            
+                    <Button AutomationId="autoRegister" Text="Register" Command="{Binding register_clicked}" />
+
+            
+                                <Button AutomationId="autoSignin" Text="Sign In" Command="{Binding signin_clicked}" />
+
+            
+            
+            
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

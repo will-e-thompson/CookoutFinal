@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Cookout.addRecipe">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                
+                <Label Text="Title:" />
+                <Frame HasShadow="false">
+                    <Entry x:Name="Name" Text="{Binding Recipe.RecipeName}"/>
+                </Frame>
+               <Label Text="Description:" />
+                <Frame HasShadow="false">
+                    <Editor x:Name="Description" Text="{Binding Recipe.Description}" AutoSize="TextChanges" />
+                </Frame>
+                <Label Text="Directions: " />
+                <Frame HasShadow="false">
+                    <Editor x:Name="Directions" Text="{Binding Recipe.Instructions}" AutoSize="TextChanges"/>
+                </Frame>
+                <Label Text="Ingredients" />
+                <Frame HasShadow="false">
+                    <Editor x:Name="Ingredients" Text="{Binding Recipe.Ingredients}" AutoSize="TextChanges"/>
+                </Frame>
+                <Frame HasShadow="false">
+                       <Button  Command="{Binding AddRecipeClicked}" HorizontalOptions="FillAndExpand" 
+                                BorderWidth="1" BorderColor="Black" TextColor="White" Text="Save" 
+                                Font="Bold,20"
+                                />         
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
